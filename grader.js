@@ -1,4 +1,3 @@
-grader.js
 #!/usr/bin/env node
 /*
 Automatically grade files for the presence of specified HTML tags/attributes.
@@ -25,6 +24,7 @@ References:
 var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
+var rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 
